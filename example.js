@@ -8,12 +8,17 @@ var ajax = new XMLHttpRequest();
 
 //2. Create a callback function:
 ajax.onreadystatechange = function(){
-  if (ajax.readyState === 4){
+  if (ajax.readyState === 4 ){
+    if (ajax.status === 200){
+
+    document.getElementByID('ajax').innerHTML = ajax.responseText;
     //First thing you need to do is select that Div with id.
     //The next thing we do is set its innerHTML property
     //innerHTML is a property that contains all the HTML inside an element
-
-    document.getElementByID('ajax').innerHTML = ajax.responseText;
+  }else if (ajax.status ===  404){
+    // file not found
+  } else if (ajax.status === 500){
+    //add message if error
   }
 };
 //event is triggered whenever there is a change with an ajax request,

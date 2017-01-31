@@ -39,3 +39,16 @@ to send an ajax request and the web browser has to create an obj with all the me
 - Get to receive data like a webpage image or other file from a server, all thats required is url
 - Post when your sending data that will be saved, sensitive stuff, in the body of the request, the form data is sent separate from url, you can send more info and is very secure
 Header for request needs to be set up
+
+## XML AND JSON
+
+- xml allows you to create data that is well organized
+- json is best to exchange data using ajax, works well with js as opposed to XML
+
+## Callbacks
+- programing you want to run when server sends back its response : new tweets to a page, updating location on map etc..
+
+- you create a callback that responds to a change in the ready state, from 0 to 4.
+- ready state change event fires up multiple times until its 4, received data from server
+- sometimes you get a file not found error, so cant update page
+- we can also check the status property though, 200 means ok, 404 is not found.
