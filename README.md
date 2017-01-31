@@ -33,3 +33,9 @@ to send an ajax request and the web browser has to create an obj with all the me
 - Open a request: browser receives 2 pieces of info, the method (get or post) and the url when the request is sent
 
 - Send request to the web server.
+
+## Get and Post:
+
+- Get to receive data like a webpage image or other file from a server, all thats required is url
+- Post when your sending data that will be saved, sensitive stuff, in the body of the request, the form data is sent separate from url, you can send more info and is very secure
+Header for request needs to be set up
