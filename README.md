@@ -52,3 +52,12 @@ Header for request needs to be set up
 - ready state change event fires up multiple times until its 4, received data from server
 - sometimes you get a file not found error, so cant update page
 - we can also check the status property though, 200 means ok, 404 is not found.
+
+## json
+- a way to use js to pass info around
+- formatted as an array or obj
+- its best to combine both
+
+## PARSING
+- In order to use json data we need to take the string we receive and convert into js
+- This is called parsing, it can be done using a single command.
