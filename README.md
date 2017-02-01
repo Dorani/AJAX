@@ -72,3 +72,8 @@ Header for request needs to be set up
 #### Replacing js with jquery
 - add the jquery script tag 1st in the index
 - check js file
+
+#### $.ajax method
+
+- settings argument is a js object containing one or more key value pairs setting a few options
+- see post examples

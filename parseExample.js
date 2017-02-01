@@ -30,3 +30,13 @@ var data = {
   lastName: "Thompson"
 }
 $.post(url, data, callback);
+
+
+
+$.ajax( url, {
+  data :formDATA,
+  type: "POST",
+  success : function(response) {
+    //message
+  }
+});
