@@ -68,3 +68,7 @@ Header for request needs to be set up
 - Check the appropriate property, in this case "in office", if false add out, if true in
 - Get the value of name prop, then insert it in li taking
 - close li tag
+
+#### Replacing js with jquery
+- add the jquery script tag 1st in the index
+- check js file
