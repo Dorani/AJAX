@@ -89,4 +89,5 @@ Header for request needs to be set up
 
 ###### Flikr api Project
 
-- 1st we need to get an api key
+- 1st we need to get an api key: acts like a password, lets the server know who is making the request, lets the server limit access to the service
+- Flikr, we don't need an api key we can use a url : https://api.flickr.com/services/feeds/photos_public.gne that let you access photos and diff info.
