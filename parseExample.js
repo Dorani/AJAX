@@ -8,6 +8,10 @@ ajax.onreadystatechange = function(){//ready state change event add our callback
     } else {
       statusHTML += '<li class="out">';// else add to out
     }
+   statusHTML += employees[i].name;//as the loop runs the statusHTML var will continue to grow with one new html list item added each time
+   statusHTML += '<li>';
+    }
+    statusHTML +='</ul>';
   }
 };
 ajax.open('GET', 'data/employees.json');//open a request, using the get method to load a file filled with json data located in a folder, normally we point to a server side script
