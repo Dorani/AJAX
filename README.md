@@ -77,3 +77,16 @@ Header for request needs to be set up
 
 - settings argument is a js object containing one or more key value pairs setting a few options
 - see post examples
+
+##### What is an api
+
+- application programing interface
+ - a method for accessing content via a 3rd party
+ - what you can get and how you can get it
+ - not all sites offer apis
+ - sometimes, some apis are js apis so you can access any apis using ajax and NOT server side programing
+ - We will be using flikrs api to create an app!
+
+###### Flikr api Project
+
+- 1st we need to get an api key
