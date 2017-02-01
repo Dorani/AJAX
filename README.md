@@ -61,3 +61,10 @@ Header for request needs to be set up
 ## PARSING
 - In order to use json data we need to take the string we receive and convert into js
 - This is called parsing, it can be done using a single command.
+
+### Presenting
+
+- Create a new HTML list items
+- Check the appropriate property, in this case "in office", if false add out, if true in
+- Get the value of name prop, then insert it in li taking
+- close li tag
