@@ -49,7 +49,18 @@ $(document).ready(function(){
   $.getJSON(url, function(response){
     var statusHTML = '<ul class="bulleted">';
     $.each(response, function(index, employee){
-      
-    })
-  })
-})
+      if (employee.inoffice === true){
+        statusHTML += '<li class="in">';// check status if they are in office, if it is, we add more html to the status html var
+      } else {
+        statusHTML += '<li class="out">';// else add to out
+      }
+     statusHTML += employees[i].name;//as the loop runs the statusHTML var will continue to grow with one new html list item added each time
+     statusHTML += '<li>';
+      }
+
+      }
+    });
+    statusHTML +='</ul>';
+    $('#employeeList').html(statusHTML);
+  });
+});
