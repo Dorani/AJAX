@@ -3,8 +3,10 @@ ajax.onreadystatechange = function(){//ready state change event add our callback
   if(ajax.readyState === 4){// make sure we receive all the json data
     var employees = JSON.parse(ajax.responseText);//method built into all web browser, string conversion.
     var statusHTML = '<ul class="bulleted">';
-    for (var i = 0; i < employees.length; i++){
-      employees[i]
+    for (var i = 0; i < employees.length; i++){// this loop will run once for each item in the array
+      statusHTML += '<li class="in">';// check status if they are in office, if it is, we add more html to the status html var
+    } else {
+      statusHTML += '<li class="out">';// else add to out
     }
   }
 };
