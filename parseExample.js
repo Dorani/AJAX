@@ -21,3 +21,12 @@ ajax.send();// send the request, the callback function does nothing till we send
 //json . parse is complete it returns a js object
 //json.parse converted the text into a js array of items that we can manipualte with js
 //employees is an array with a list of obj, obj have key val pair
+
+
+//POST METHOD:
+var url = "http://website.com/posts";
+var data = {
+  firstName: "Dave",
+  lastName: "Thompson"
+}
+$.post(url, data, callback);
