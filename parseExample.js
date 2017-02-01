@@ -12,6 +12,7 @@ ajax.onreadystatechange = function(){//ready state change event add our callback
    statusHTML += '<li>';
     }
     statusHTML +='</ul>';
+    document.getElementByID('employeeList').innerHTML = statusHTML;// selecting element, and then setting inner html property to var declared.
   }
 };
 ajax.open('GET', 'data/employees.json');//open a request, using the get method to load a file filled with json data located in a folder, normally we point to a server side script
