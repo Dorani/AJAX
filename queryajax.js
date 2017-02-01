@@ -27,3 +27,15 @@ $.get(url, data, callback);
 //finally the callback function processes the returned data, works like the js callback
 //but with jquery you dont need to check the xhr ready status, and http status errors
 //calback functions ONLY runs with all things are good!
+
+
+//Want to see a faster way:
+
+function sendAjax(){
+  $.get('sidebar.html', function(response){
+    $('#ajax').html(response);
+  });
+  $('#load').hide();
+}
+//we simply pass a url and callback function
+//load method is faster
