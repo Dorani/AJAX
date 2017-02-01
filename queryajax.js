@@ -39,3 +39,14 @@ function sendAjax(){
 }
 //we simply pass a url and callback function
 //load method is faster
+
+
+
+
+
+$(document).ready(function(){
+  var url = "../data/employees.json";
+  $.getJSON(url, function(response){
+    var statusHTML = '<ul class="bulleted">';
+  })
+})
